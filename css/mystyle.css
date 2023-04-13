@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root {
+    --darkblue: #204649;
+    --teal:  #5ddfba;
+    --mint: #95C5C8;
+    --blush: #F0C0AA;
+    --pink: #C06C84;
+    --purple: #6C5B7B;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Roboto', sans-serif;*/
+    font-size: small;
+    color: var(--darkblue);   
+}
+nav {
+    padding: 0.7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--blush);
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    background-color: var(--blush);
+}
+nav ul li {
+    margin: 0.5rem;
+}
+nav a {
+    text-decoration: none;
+    color: var(--darkblue);    
+}
+.hero {
+    background-color: #5ddfba;
+    background:url('https://source.unsplash.com/u27Rrbs9Dwc');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--teal);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 80vh;
+}
+.hero h1 {
+    font-size: 2.5rem;
+}
+.hero h2 {
+    font-family: 'Pacifico', cursive;
+}
+.fa {
+    font-size: 30px;
+    color: var(--darkblue);    
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkblue);
+    padding: 1rem;
+    color: var(--blush);
+    text-align: center;
+}
+.container h2 {
+    margin: 1rem 0rem;
+
+}
+/* TABLE */
+table {
+    font-size: xx-small;
+}
+td {
+    padding: 0.2rem;
+    text-align: center;
+    border: 0.2rem;
+    border-bottom: solid thin var(--blush);
+}
+table img {
+    max-width: 6rem;
+    margin: 0.7rem 0rem;
+}
+/* FOOTER */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem;
+    font-size: x-small;
+    background-color: var(--blush);
+}
+.footer-right {
+    text-align: center;
+}
+input {
+    border-radius: 2rem;
+    border-style: none;
+    background-color: var(--darkblue);
+    padding: 0.2rem 0.5rem;
+    margin: 0.2rem 0rem;
+}
+::placeholder {
+    font-size: xx-small;
+}
+footer button {
+    background-color: var(--teal);
+    border-radius: 0.7rem;
+    border-style: none;
+    font-size: xx-small;
+    padding: 0.2rem 0.3rem;
+}
