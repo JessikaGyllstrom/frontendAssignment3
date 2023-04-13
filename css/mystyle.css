@@ -20,6 +20,8 @@ body {
     /* font-family: 'Roboto', sans-serif;*/
     font-size: small;
     color: var(--darkblue);   
+    height: 100vh;
+    background-color: var(--darkblue);
 }
 nav {
     padding: 0.7rem;
@@ -27,6 +29,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     background-color: var(--blush);
+    height: 10%;
 }
 nav ul {
     display: flex;
@@ -41,6 +44,7 @@ nav a {
     text-decoration: none;
     color: var(--darkblue);    
 }
+/* HERO */
 .hero {
     background-color: #5ddfba;
     background:url('https://source.unsplash.com/u27Rrbs9Dwc');
@@ -52,7 +56,8 @@ nav a {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    min-height: 80vh;
+    text-align: center;
+    height: 80%;
 }
 .hero h1 {
     font-size: 2.5rem;
@@ -72,10 +77,10 @@ nav a {
     padding: 1rem;
     color: var(--blush);
     text-align: center;
+    min-height: 70%;
 }
 .container h2 {
     margin: 1rem 0rem;
-
 }
 section {
     overflow: hidden;
@@ -114,13 +119,58 @@ table img:hover {
 /* FOOTER */
 footer {
     display: flex;
-    justify-content: space-between;
-    padding: 0.7rem;
+    justify-content: space-around;
     font-size: x-small;
     background-color: var(--blush);
+    align-items: center;
+    height: 10%;
 }
 .footer-right {
     text-align: center;
+}
+/* CONTACT */ 
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--blush);
+    padding: 1rem;
+    color: var(--darkblue);
+    width: 70%;
+}
+.form-img {
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+form img {
+    max-width: 100%;
+    opacity: 0.6;
+}
+.form-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #204649;
+}
+form input[type="text"],form input[type="email"] {
+    background: none;
+    border: none;
+    border-bottom: 0.001rem solid var(--darkblue);
+    margin-bottom: 0.5rem;
+}
+textarea {
+    background: none;
+    border: 0.001rem solid var(--darkblue);
+    padding: 0.2rem;
+}
+form input[type="submit"] {
+    margin-top: 0.5rem;
+    padding: 0.2rem 0rem;
+    background-color: var(--teal);
+    border: none;
 }
 /* NEWSLETTER */
 #Newsletter {
@@ -131,14 +181,14 @@ footer {
 ::placeholder {
     font-size: xx-small;
 }
-input[type=text] {
+#Newsletter input[type=text] {
     position: relative;
     height: 1.2rem;
     box-sizing: border-box;
     background-color: #ffffff;
     padding: 0.2rem;
  }
-input[type=submit] {
+#Newsletter input[type=submit] {
     position:absolute;
     height: 100%;
     top: 0px;
@@ -152,12 +202,25 @@ input[type=submit] {
     font-size: x-small;
     font-weight: 500;
 }
-input:-webkit-autofill {
+#Newsletter input:-webkit-autofill {
     -webkit-box-shadow: inset 0 0 0px 9999px white;
+}
+input[type=submit]:hover, #Newsletter input[type=submit]:hover  {
+    background-color: var(--purple);
+    color: var(--teal);
+    transition: 0.3s;
+    transition-timing-function: ease-in;
 }
 /* MEDIA QUERIES */
 
-
+@media (max-height: 660px) and (max-width: 1400px ){
+    .hero {
+        height: 80%;
+    }
+    footer {
+        height: 17%;
+    }
+}
 @media (min-width: 560px) {
     section {
         width: 80%;
@@ -175,12 +238,34 @@ input:-webkit-autofill {
     .description {
         flex-grow: 2;
     }
-
+    form {
+        width: 30%;
+    }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1000px) {
+    nav {
+        font-size: x-large;
+    }
+    .hero h1 {
+        font-size: 8rem;
+    }
+    .hero h2 {
+        font-size: 5rem;
+    }
+}
+@media (min-width: 1300px)  {
+    .hero h1 {
+        font-size: 4rem;
+    }
+    .hero h2 {
+        font-size: 3rem;
+    }
+    nav {
+        font-size: large;
+    }
+
     table {
         font-size: large;
-
     }
     section h2, table .rating {
         font-size: xx-large;
@@ -190,5 +275,8 @@ input:-webkit-autofill {
     }
     table img {
         min-width: 20rem;
+    }
+    footer {
+        font-size: large;
     }
 }
