@@ -122,22 +122,38 @@ footer {
 .footer-right {
     text-align: center;
 }
-input {
-    border-radius: 2rem;
-    border-style: none;
-    background-color: var(--darkblue);
-    padding: 0.2rem 0.5rem;
-    margin: 0.2rem 0rem;
+/* NEWSLETTER */
+#Newsletter {
+    position: relative;
+    display: inline-block;
+    margin: 0.3rem 0rem;
 }
 ::placeholder {
     font-size: xx-small;
 }
-footer button {
+input[type=text] {
+    position: relative;
+    height: 1.2rem;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    padding: 0.2rem;
+ }
+input[type=submit] {
+    position:absolute;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+    border: none;
+    color: var(--darkblue);
+    display: block;
     background-color: var(--teal);
-    border-radius: 0.7rem;
-    border-style: none;
-    font-size: xx-small;
-    padding: 0.2rem 0.3rem;
+    cursor: pointer;
+    padding: 0rem 0.3rem;
+    font-size: x-small;
+    font-weight: 500;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: inset 0 0 0px 9999px white;
 }
 /* MEDIA QUERIES */
 
