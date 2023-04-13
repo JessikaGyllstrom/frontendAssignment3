@@ -77,19 +77,39 @@ nav a {
     margin: 1rem 0rem;
 
 }
+section {
+    overflow: hidden;
+}
 /* TABLE */
 table {
     font-size: xx-small;
+    display: flex;
+    width: 100%;
+}
+tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: solid thin var(--blush);
+    padding: 0.5rem;
 }
 td {
     padding: 0.2rem;
     text-align: center;
     border: 0.2rem;
-    border-bottom: solid thin var(--blush);
+    flex: 1;
+}
+table .rating {
+    font-weight: 600;
+    font-size: small;
 }
 table img {
-    max-width: 6rem;
     margin: 0.7rem 0rem;
+    width: 100%;
+}
+table img:hover {
+    scale: 110%;
+    transition: 0.7s;
 }
 /* FOOTER */
 footer {
@@ -118,4 +138,41 @@ footer button {
     border-style: none;
     font-size: xx-small;
     padding: 0.2rem 0.3rem;
+}
+/* MEDIA QUERIES */
+
+
+@media (min-width: 560px) {
+    section {
+        width: 80%;
+    }
+    section h2, table .rating {
+        font-size: medium;
+    }
+    table {
+        font-size: small;
+    }
+    tr {
+        flex-direction: row;
+        padding: 1rem;
+    }
+    .description {
+        flex-grow: 2;
+    }
+
+}
+@media (min-width: 1300px) {
+    table {
+        font-size: large;
+
+    }
+    section h2, table .rating {
+        font-size: xx-large;
+    }
+    section {
+        width: 70%;
+    }
+    table img {
+        min-width: 20rem;
+    }
 }
