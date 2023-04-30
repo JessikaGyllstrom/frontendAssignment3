@@ -3,49 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" >
+    <meta name="description" content="A travelling guide for Japan">
+    <meta name="keywords" content="Travel, Japan, Guide">
+    <meta name="author" content="Jessika Gyllström">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <script src="https://kit.fontawesome.com/1e8956d915.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/mystyle.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <title>Discover Japan</title>
 </head>
 <body>
     <nav>
-        <div class="logo">
-            <i class="fa fa-mountain-city"></i>
-        </div>
-        <div class="navtxt">
-            <ul>
-                <li><a href="./pages/sites.html">Sites</a></li>
-                <li><a href="./pages/cities.html">Cities</a></li>
-                <li><a href="">Tips</a></li>
-                <li><a href="./pages/contact.html">Contact</a></li>
-            </ul>
+        <div class="navcontainer">
+            <div class="logo">
+                <a href="/index.html"><img src="/images/travel.png"></a>
+                <a href="/index.html"><h3>wanderfy</h3></a>
+            </div>
+            <div class="navtxt">
+                <ul>
+                    <li><a href="./pages/sites.html">Sites</a></li>
+                    <li><a href="./pages/cities.html">Cities</a></li>
+                    <li><a href="./pages/tips.html">Tips</a></li>
+                    <li><a href="./pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <main class="hero">
-        <div class="herotext">
+    <header class="container">
+        <div class="hero">
             <h1>DISCOVER</h1>
-            <h2>the beauty of Japan</h2>
+            <h2>the beauty of <span>Japan</span></h2>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="intro">
+                <div class="txt">
+                    <h2 class="title">Konnichiwa!</h2>
+                    <h3>こんにちは</h3>
+                    <p>Our Japan travel agency offers tailored trips to explore the country's rich culture, traditions, and stunning landscapes. From Tokyo to Kyoto, immerse yourself in a unique and unforgettable experience!</p>
+                </div>
+                <div>
+                    <h4>Why Japan?</h4>
+                </div>
+            </div>
+            <div class="container grid">
+                <div class="item-0"><h6>文<br>化<br></h6></div>
+                <div class="item-1"><img src="/images/geisha.jpg"></div>
+                <div class="item-2"><h4>Unique<br>Culture</h4></div>
+                <div class="item-3"><h4>Breathtaking<br>Nature</h4></div>
+                <div class="item-4"><img src="https://source.unsplash.com/ePA8maaS49Q"></div>
+                <div class="item-5"><h6>自<br>然</h6></div>
+                <div class="item-6"><h6>歴<br>史</h6></div>
+                <div class="item-7"><img src="https://source.unsplash.com/nxBfBDDqjjc"></div>
+                <div class="item-8"><h4>Rich<br>History</h4></div>
+                <div class="item-9"><h6>食<br>品</h6></div>
+                <div class="item-10"><img src="https://source.unsplash.com/Yw_w8WctF6k"></div>
+                <div class="item-11"><h4>Delicious<br>Cuisine</h4></div>
+            </div>
+            <!-- Services -->
+            <section class="services">
+                <div class="cards">
+                    <div class="card">
+                        <div class="box">
+                            <div class="image">
+                                <img src="/images/temple.png">
+                            </div>
+                        </div>
+                        <div class="text">
+                            <h4 class="title">Top Sites</h4>
+                            <p>Japan has an abundance of cultural and historic sites. Discover Shibuya Crossing, Fushimi Inari Shrine, and Himeji Castle.</p>
+                            <button><a href="/pages/sites.html">GO<span><i class="fa-solid fa-angle-right"></i></span></a></button>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <div class="image">
+                                <img src="/images/skyscraper.png">
+                            </div>
+                        </div>
+                        <h4 class="title">Top Cities</h4>
+                        <p>Japan has an abundance of cultural and historic sites. Discover Shibuya Crossing, Fushimi Inari Shrine, and Himeji Castle.</p>
+                        <button><a href="/pages/cities.html">GO<span><i class="fa-solid fa-angle-right"></i></span></a></button>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <div class="image">
+                                <img src="/images/bulb.png">
+                            </div>
+                        </div>
+                        <h4 class="title">Tips</h4>
+                        <p>Japan has an abundance of cultural and historic sites. Discover Shibuya Crossing, Fushimi Inari Shrine, and Himeji Castle.</p>
+                        <button><a href="/pages/tips.html">GO<span><i class="fa-solid fa-angle-right"></i></span></a></button>
+                    </div>
+                </div>
+            </section>
+            <!-- Services end-->
         </div>
     </main>
+    <!-- Main end -->
+    <!-- Footer start -->
     <footer>
         <div class="footer-left">
-            <h4>Travel Agency</h4>
+            <p><b>wanderfy</b></p>
             <p>2184 Fairfax Drive</p>
             <p>Anaheim CA</p>
         </div>
         <div class="footer-center">
             <p>Subscribe to our</p>
-            <h4>NEWSLETTER</h4>
-            <div id="Newsletter">
+            <p><b>NEWSLETTER</b>
+            <div class="newsletter">
                 <input type="text" placeholder="Enter email...">             
-                <input type="submit" value="SUBMIT">
+                <input type="submit" value="Submit">
             </div>
         </div>
         <div class="footer-right">
-            <h4>Follow Us!</h4>
+            <p><b>Follow Us!</b>
             <div class="social-icons">
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-instagram"></i>

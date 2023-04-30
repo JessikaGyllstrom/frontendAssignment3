@@ -11,22 +11,25 @@
 </head>
 <body>
     <nav>
-        <div class="logo">
-            <i class="fa fa-mountain-city"></i>
-        </div>
-        <div class="navtxt">
-            <ul>
-                <li><a href="./sites.html">Sites</a></li>
-                <li><a href="./cities.html">Cities</a></li>
-                <li><a href="">Tips</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
+        <div class="navcontainer">
+            <div class="logo">
+                <a href="/index.html"><img src="/images/travel.png"></a>
+                <h3>wanderfy</h3>
+            </div>
+            <div class="navtxt">
+                <ul>
+                    <li><a href="./sites.html">Sites</a></li>
+                    <li><a href="./cities.html">Cities</a></li>
+                    <li><a href="./tips.html">Tips</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
-    <main class="container">
-        <section>
-            <h2>Top cities to visit</h2>
-            <table  cellpadding="0" cellspacing="0">
+    <main>
+        <div class="tablecontainer">
+            <h2 class="title">Top cities to visit</h2>
+            <table>
                 <tr>
                   <td class="rating">#1</td>
                   <td><img src="https://source.unsplash.com/_UIN-pFfJ7c" alt="kyoto"></td>
@@ -39,7 +42,6 @@
                     <td><h4>TAKAYAMA</h4></td>
                     <td class="description"><p>Widely considered Gifu's crown jewel, Takayama is a fantastic destination surrounded by the scenic alpine countryside of the Japan Alps.</p></td>
                 </tr>
-                  
                 <tr>
                     <td class="rating">#3</td>
                     <td><img src="https://source.unsplash.com/4OmQ8pDJ5W0" alt="nara"></td>
@@ -88,7 +90,31 @@
                     <td class="description"><p>Tokyo is the capital and most populous city of Japan.</p></td>
                 </tr>
             </table>
-        </section>
+        </div>
     </main>
+  <!-- Footer start -->
+    <footer>
+        <div class="footer-left">
+            <p><b>wanderfy</b>
+            <p>2184 Fairfax Drive</p>
+            <p>Anaheim CA</p>
+        </div>
+        <div class="footer-center">
+            <p>Subscribe to our</p>
+            <p><b>NEWSLETTER</b>
+            <div class="newsletter">
+                <input type="text" placeholder="Enter email...">             
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+        <div class="footer-right">
+            <p><b>Follow Us!</b>
+            <div class="social-icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
